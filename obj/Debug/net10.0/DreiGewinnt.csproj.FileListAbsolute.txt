@@ -1,0 +1,14 @@
+/home/tori/Repos/Projekte/DreiGewinnt/bin/Debug/net10.0/DreiGewinnt
+/home/tori/Repos/Projekte/DreiGewinnt/bin/Debug/net10.0/DreiGewinnt.deps.json
+/home/tori/Repos/Projekte/DreiGewinnt/bin/Debug/net10.0/DreiGewinnt.runtimeconfig.json
+/home/tori/Repos/Projekte/DreiGewinnt/bin/Debug/net10.0/DreiGewinnt.dll
+/home/tori/Repos/Projekte/DreiGewinnt/bin/Debug/net10.0/DreiGewinnt.pdb
+/home/tori/Repos/Projekte/DreiGewinnt/obj/Debug/net10.0/DreiGewinnt.GeneratedMSBuildEditorConfig.editorconfig
+/home/tori/Repos/Projekte/DreiGewinnt/obj/Debug/net10.0/DreiGewinnt.AssemblyInfoInputs.cache
+/home/tori/Repos/Projekte/DreiGewinnt/obj/Debug/net10.0/DreiGewinnt.AssemblyInfo.cs
+/home/tori/Repos/Projekte/DreiGewinnt/obj/Debug/net10.0/DreiGewinnt.csproj.CoreCompileInputs.cache
+/home/tori/Repos/Projekte/DreiGewinnt/obj/Debug/net10.0/DreiGewinnt.dll
+/home/tori/Repos/Projekte/DreiGewinnt/obj/Debug/net10.0/refint/DreiGewinnt.dll
+/home/tori/Repos/Projekte/DreiGewinnt/obj/Debug/net10.0/DreiGewinnt.pdb
+/home/tori/Repos/Projekte/DreiGewinnt/obj/Debug/net10.0/DreiGewinnt.genruntimeconfig.cache
+/home/tori/Repos/Projekte/DreiGewinnt/obj/Debug/net10.0/ref/DreiGewinnt.dll
