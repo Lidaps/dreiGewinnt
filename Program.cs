@@ -21,7 +21,10 @@
 
                 Console.Clear();
                 Console.WriteLine("Drei Gewinnt drücke eine Taste von 1-9 um zu spielen");
+                Console.WriteLine("");
                 Console.WriteLine(player + " " + "Runde " + counter);
+                Console.WriteLine();
+                Console.WriteLine();
                 Spielfeld.Anzeigen();
 
                 ConsoleKey taste = Console.ReadKey(true).Key;
@@ -38,6 +41,9 @@
 
                 switch (taste)
                 {
+                    case ConsoleKey.Q:
+                        isRunning = false;
+                        continue;
                     case ConsoleKey.D1:
                         feld = 0;
                         break;
@@ -66,6 +72,8 @@
                         feld = 8;
                         break;
                     default:
+                        Console.WriteLine("Falsche Taste!!!");
+                        Console.ReadKey();
                         continue;
                 }
 
@@ -86,172 +94,171 @@
                     Spielfeld.symbole[feld] = "X";
                 }
 
-                if (
-                    taste == ConsoleKey.D1
-                    && counter % 2 != 0
-                    && Spielfeld.symbole[0] != "X"
-                    && Spielfeld.symbole[0] != "O"
-                )
-                {
-                    Spielfeld.symbole[0] = "O";
-                }
-                if (
-                    taste == ConsoleKey.D2
-                    && counter % 2 != 0
-                    && Spielfeld.symbole[1] != "X"
-                    && Spielfeld.symbole[1] != "O"
-                )
-                {
-                    Spielfeld.symbole[1] = "O";
-                }
-                if (
-                    taste == ConsoleKey.D3
-                    && counter % 2 != 0
-                    && Spielfeld.symbole[2] != "X"
-                    && Spielfeld.symbole[2] != "O"
-                )
-                {
-                    Spielfeld.symbole[2] = "O";
-                }
-                if (
-                    taste == ConsoleKey.D4
-                    && counter % 2 != 0
-                    && Spielfeld.symbole[3] != "X"
-                    && Spielfeld.symbole[3] != "O"
-                )
-                {
-                    Spielfeld.symbole[3] = "O";
-                }
-                if (
-                    taste == ConsoleKey.D5
-                    && counter % 2 != 0
-                    && Spielfeld.symbole[4] != "X"
-                    && Spielfeld.symbole[4] != "O"
-                )
-                {
-                    Spielfeld.symbole[4] = "O";
-                }
-                if (
-                    taste == ConsoleKey.D6
-                    && counter % 2 != 0
-                    && Spielfeld.symbole[5] != "X"
-                    && Spielfeld.symbole[5] != "O"
-                )
-                {
-                    Spielfeld.symbole[5] = "O";
-                }
-                if (
-                    taste == ConsoleKey.D7
-                    && counter % 2 != 0
-                    && Spielfeld.symbole[6] != "X"
-                    && Spielfeld.symbole[6] != "O"
-                )
-                {
-                    Spielfeld.symbole[6] = "O";
-                }
-                if (
-                    taste == ConsoleKey.D8
-                    && counter % 2 != 0
-                    && Spielfeld.symbole[7] != "X"
-                    && Spielfeld.symbole[7] != "O"
-                )
-                {
-                    Spielfeld.symbole[7] = "O";
-                }
-                if (
-                    taste == ConsoleKey.D9
-                    && counter % 2 != 0
-                    && Spielfeld.symbole[8] != "X"
-                    && Spielfeld.symbole[8] != "O"
-                )
-                {
-                    Spielfeld.symbole[8] = "O";
-                }
-                //Spieler 2
+                //     taste == ConsoleKey.D1
+                //     && counter % 2 != 0
+                //     && Spielfeld.symbole[0] != "X"
+                //     && Spielfeld.symbole[0] != "O"
+                // )
+                // {
+                //     Spielfeld.symbole[0] = "O";
+                // }
+                // if (
+                //     taste == ConsoleKey.D2
+                //     && counter % 2 != 0
+                //     && Spielfeld.symbole[1] != "X"
+                //     && Spielfeld.symbole[1] != "O"
+                // )
+                // {
+                //     Spielfeld.symbole[1] = "O";
+                // }
+                // if (
+                //     taste == ConsoleKey.D3
+                //     && counter % 2 != 0
+                //     && Spielfeld.symbole[2] != "X"
+                //     && Spielfeld.symbole[2] != "O"
+                // )
+                // {
+                //     Spielfeld.symbole[2] = "O";
+                // }
+                // if (
+                //     taste == ConsoleKey.D4
+                //     && counter % 2 != 0
+                //     && Spielfeld.symbole[3] != "X"
+                //     && Spielfeld.symbole[3] != "O"
+                // )
+                // {
+                //     Spielfeld.symbole[3] = "O";
+                // }
+                // if (
+                //     taste == ConsoleKey.D5
+                //     && counter % 2 != 0
+                //     && Spielfeld.symbole[4] != "X"
+                //     && Spielfeld.symbole[4] != "O"
+                // )
+                // {
+                //     Spielfeld.symbole[4] = "O";
+                // }
+                // if (
+                //     taste == ConsoleKey.D6
+                //     && counter % 2 != 0
+                //     && Spielfeld.symbole[5] != "X"
+                //     && Spielfeld.symbole[5] != "O"
+                // )
+                // {
+                //     Spielfeld.symbole[5] = "O";
+                // }
+                // if (
+                //     taste == ConsoleKey.D7
+                //     && counter % 2 != 0
+                //     && Spielfeld.symbole[6] != "X"
+                //     && Spielfeld.symbole[6] != "O"
+                // )
+                // {
+                //     Spielfeld.symbole[6] = "O";
+                // }
+                // if (
+                //     taste == ConsoleKey.D8
+                //     && counter % 2 != 0
+                //     && Spielfeld.symbole[7] != "X"
+                //     && Spielfeld.symbole[7] != "O"
+                // )
+                // {
+                //     Spielfeld.symbole[7] = "O";
+                // }
+                // if (
+                //     taste == ConsoleKey.D9
+                //     && counter % 2 != 0
+                //     && Spielfeld.symbole[8] != "X"
+                //     && Spielfeld.symbole[8] != "O"
+                // )
+                // {
+                //     Spielfeld.symbole[8] = "O";
+                // }
+                // //Spieler 2
+                // //
+                // //
+                // if (
+                //     taste == ConsoleKey.D1
+                //     && counter % 2 == 0
+                //     && Spielfeld.symbole[0] != "O"
+                //     && Spielfeld.symbole[0] != "X"
+                // )
+                // {
+                //     Spielfeld.symbole[0] = "X";
+                // }
+                // if (
+                //     taste == ConsoleKey.D2
+                //     && counter % 2 == 0
+                //     && Spielfeld.symbole[1] != "O"
+                //     && Spielfeld.symbole[1] != "X"
+                // )
+                // {
+                //     Spielfeld.symbole[1] = "X";
+                // }
+                // if (
+                //     taste == ConsoleKey.D3
+                //     && counter % 2 == 0
+                //     && Spielfeld.symbole[2] != "O"
+                //     && Spielfeld.symbole[2] != "X"
+                // )
+                // {
+                //     Spielfeld.symbole[2] = "X";
+                // }
+                // if (
+                //     taste == ConsoleKey.D4
+                //     && counter % 2 == 0
+                //     && Spielfeld.symbole[3] != "O"
+                //     && Spielfeld.symbole[3] != "X"
+                // )
+                // {
+                //     Spielfeld.symbole[3] = "X";
+                // }
+                // if (
+                //     taste == ConsoleKey.D5
+                //     && counter % 2 == 0
+                //     && Spielfeld.symbole[4] != "O"
+                //     && Spielfeld.symbole[4] != "X"
+                // )
+                // {
+                //     Spielfeld.symbole[4] = "X";
+                // }
+                // if (
+                //     taste == ConsoleKey.D6
+                //     && counter % 2 == 0
+                //     && Spielfeld.symbole[5] != "O"
+                //     && Spielfeld.symbole[5] != "X"
+                // )
+                // {
+                //     Spielfeld.symbole[5] = "X";
+                // }
+                // if (
+                //     taste == ConsoleKey.D7
+                //     && counter % 2 == 0
+                //     && Spielfeld.symbole[6] != "O"
+                //     && Spielfeld.symbole[6] != "X"
+                // )
+                // {
+                //     Spielfeld.symbole[6] = "X";
+                // }
+                // if (
+                //     taste == ConsoleKey.D8
+                //     && counter % 2 == 0
+                //     && Spielfeld.symbole[7] != "O"
+                //     && Spielfeld.symbole[7] != "X"
+                // )
+                // {
+                //     Spielfeld.symbole[7] = "X";
+                // }
+                // if (
+                //     taste == ConsoleKey.D9
+                //     && counter % 2 == 0
+                //     && Spielfeld.symbole[8] != "O"
+                //     && Spielfeld.symbole[8] != "X"
+                // )
+                // {
+                //     Spielfeld.symbole[8] = "X";
+                // }
                 //
-                //
-                if (
-                    taste == ConsoleKey.D1
-                    && counter % 2 == 0
-                    && Spielfeld.symbole[0] != "O"
-                    && Spielfeld.symbole[0] != "X"
-                )
-                {
-                    Spielfeld.symbole[0] = "X";
-                }
-                if (
-                    taste == ConsoleKey.D2
-                    && counter % 2 == 0
-                    && Spielfeld.symbole[1] != "O"
-                    && Spielfeld.symbole[1] != "X"
-                )
-                {
-                    Spielfeld.symbole[1] = "X";
-                }
-                if (
-                    taste == ConsoleKey.D3
-                    && counter % 2 == 0
-                    && Spielfeld.symbole[2] != "O"
-                    && Spielfeld.symbole[2] != "X"
-                )
-                {
-                    Spielfeld.symbole[2] = "X";
-                }
-                if (
-                    taste == ConsoleKey.D4
-                    && counter % 2 == 0
-                    && Spielfeld.symbole[3] != "O"
-                    && Spielfeld.symbole[3] != "X"
-                )
-                {
-                    Spielfeld.symbole[3] = "X";
-                }
-                if (
-                    taste == ConsoleKey.D5
-                    && counter % 2 == 0
-                    && Spielfeld.symbole[4] != "O"
-                    && Spielfeld.symbole[4] != "X"
-                )
-                {
-                    Spielfeld.symbole[4] = "X";
-                }
-                if (
-                    taste == ConsoleKey.D6
-                    && counter % 2 == 0
-                    && Spielfeld.symbole[5] != "O"
-                    && Spielfeld.symbole[5] != "X"
-                )
-                {
-                    Spielfeld.symbole[5] = "X";
-                }
-                if (
-                    taste == ConsoleKey.D7
-                    && counter % 2 == 0
-                    && Spielfeld.symbole[6] != "O"
-                    && Spielfeld.symbole[6] != "X"
-                )
-                {
-                    Spielfeld.symbole[6] = "X";
-                }
-                if (
-                    taste == ConsoleKey.D8
-                    && counter % 2 == 0
-                    && Spielfeld.symbole[7] != "O"
-                    && Spielfeld.symbole[7] != "X"
-                )
-                {
-                    Spielfeld.symbole[7] = "X";
-                }
-                if (
-                    taste == ConsoleKey.D9
-                    && counter % 2 == 0
-                    && Spielfeld.symbole[8] != "O"
-                    && Spielfeld.symbole[8] != "X"
-                )
-                {
-                    Spielfeld.symbole[8] = "X";
-                }
-
                 // Auswertung!
                 //
                 //
@@ -282,13 +289,19 @@
                         && Spielfeld.symbole[6] == "X"
                 )
                 {
-                    isRunning = false;
+                    for (int i = 0; i < Spielfeld.symbole.Length; i++)
+                    {
+                        Spielfeld.symbole[i] = " ";
+                    }
+                    counter = 1;
                     Console.Clear();
                     Console.WriteLine("jewonnen!");
                     Console.WriteLine("jewonnen!");
                     Console.WriteLine("jewonnen!");
                     Console.WriteLine("jewonnen!");
                     Console.WriteLine("jewonnen!");
+                    Console.WriteLine("Neues Spiel Taste drücken");
+                    Console.ReadKey();
                 }
                 if (
                     Spielfeld.symbole[0] == "O"
@@ -317,13 +330,18 @@
                         && Spielfeld.symbole[6] == "O"
                 )
                 {
-                    isRunning = false;
+                    for (int i = 0; i < Spielfeld.symbole.Length; i++)
+                    {
+                        Spielfeld.symbole[i] = " ";
+                    }
+                    counter = 1;
                     Console.Clear();
                     Console.WriteLine("jewonnen!");
                     Console.WriteLine("jewonnen!");
                     Console.WriteLine("jewonnen!");
                     Console.WriteLine("jewonnen!");
-                    Console.WriteLine("jewonnen!");
+                    Console.WriteLine("Neues Spiel Taaste drücken!");
+                    Console.ReadKey();
                 }
                 counter++;
             }
