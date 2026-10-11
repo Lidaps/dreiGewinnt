@@ -32,6 +32,60 @@
 
                 // Eingabe der Spieler
                 // Spieler 1
+                //
+                //
+                int feld = -1;
+
+                switch (taste)
+                {
+                    case ConsoleKey.D1:
+                        feld = 0;
+                        break;
+                    case ConsoleKey.D2:
+                        feld = 1;
+                        break;
+                    case ConsoleKey.D3:
+                        feld = 2;
+                        break;
+                    case ConsoleKey.D4:
+                        feld = 3;
+                        break;
+                    case ConsoleKey.D5:
+                        feld = 4;
+                        break;
+                    case ConsoleKey.D6:
+                        feld = 5;
+                        break;
+                    case ConsoleKey.D7:
+                        feld = 6;
+                        break;
+                    case ConsoleKey.D8:
+                        feld = 7;
+                        break;
+                    case ConsoleKey.D9:
+                        feld = 8;
+                        break;
+                    default:
+                        continue;
+                }
+
+                if (
+                    counter % 2 != 0
+                    && Spielfeld.symbole[feld] != "X"
+                    && Spielfeld.symbole[feld] != "O"
+                )
+                {
+                    Spielfeld.symbole[feld] = "O";
+                }
+                if (
+                    counter % 2 == 0
+                    && Spielfeld.symbole[feld] != "X"
+                    && Spielfeld.symbole[feld] != "O"
+                )
+                {
+                    Spielfeld.symbole[feld] = "X";
+                }
+
                 if (
                     taste == ConsoleKey.D1
                     && counter % 2 != 0

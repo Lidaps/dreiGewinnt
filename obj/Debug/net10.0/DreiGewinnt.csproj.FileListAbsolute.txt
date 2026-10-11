@@ -12,3 +12,4 @@
 /home/tori/Repos/Projekte/DreiGewinnt/obj/Debug/net10.0/DreiGewinnt.pdb
 /home/tori/Repos/Projekte/DreiGewinnt/obj/Debug/net10.0/DreiGewinnt.genruntimeconfig.cache
 /home/tori/Repos/Projekte/DreiGewinnt/obj/Debug/net10.0/ref/DreiGewinnt.dll
+/home/tori/Repos/Projekte/DreiGewinnt/obj/Debug/net10.0/DreiGewinnt.sourcelink.json
